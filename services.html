@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heath.gov.ngt</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Wave3.png" alt="Logo" width="40"> MyBrand
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-cogs"></i> Services
+                        </a>
+                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html"><i class="fas fa-cogs"></i> Our services</a></li>
+                            <li><a class="dropdown-item" href="history.html"><i class="fas fa-history"></i> Our history</a></li>
+                            <li><a class="dropdown-item" href="mang.html"><i class="fas fa-users"></i> Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="search-box d-flex">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons d-flex">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-section">
+        <div class="logo">
+            <img src="images/stethoscope 1.avif" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <div>
+                <i class="fa fa-phone"></i> +123 456 7890
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i> contact@example.com
+            </div>
+            <div>
+                <i class="fa fa-clock"></i> Mon-Fri: 9AM - 6PM
+            </div>
+        </div>
+    </div>
+    <!----------search Bar---------->
+      <div class="search-section">
+        <div class="search-container">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" class="search-box" placeholder="Search FAQ..." onkeyup="showSuggestions()">
+            <div class="suggestions" id="suggestions">
+                <div>Suggestion 1</div>
+                <div>Suggestion 2</div>
+                <div>Suggestion 3</div>
+            </div>
+        </div>
+    </div>
+     <!-------new section--->
+
+<section class="about-hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <h2 class="mb-3" style="color: gold;">Services</h2>
+        <nav class="breadcrumb-nav d-flex align-items-center">
+          <i class="fa fa-home fa-lg text-white me-2"></i>
+          <span class="breadcrumb-text"><a href="index.html">Home</a></span>
+           <i class="fas fa-envelope text-white me-2"></i>
+          <span class="breadcrumb-text"><a href="contact.html">Contact</a></span>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!------ services cards---------->
+    <section class="hospital-services-section py-5">
+  <div class="container">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap text-center text-md-start">
+      <div>
+        <h5 class="text-muted text-uppercase mb-1" style="color: gold;">Our Specialization</h5>
+        <h1 class="fw-bold" style="color: gold;">We Provide Awesome Services</h1>
+      </div>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/cardiologist-doctor-explaining-heart-health-patient_23-2148747197.jpg?w=400" class="card-img-top" alt="Cardiology">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cardiology</h5>
+            <p class="card-text">Expert heart care and diagnostics by top specialists.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/female-pediatrician-holding-cute-baby-clinic_23-2148747211.jpg?w=400" class="card-img-top" alt="Pediatrics">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pediatrics</h5>
+            <p class="card-text">Gentle and expert care for babies and children.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/mri-scan-equipment-modern-hospital_23-2148757246.jpg?w=400" class="card-img-top" alt="Radiology">
+          <div class="card-body text-center">
+            <h5 class="card-title">Radiology</h5>
+            <p class="card-text">Advanced diagnostic imaging with cutting-edge technology.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/emergency-team-helping-unconscious-man_23-2149142517.jpg?w=400" class="card-img-top" alt="Emergency">
+          <div class="card-body text-center">
+            <h5 class="card-title">Emergency Care</h5>
+            <p class="card-text">24/7 life-saving medical response and trauma support.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/orthopedic-therapist-checking-xray-patient_23-2148888029.jpg?w=400" class="card-img-top" alt="Orthopedics">
+          <div class="card-body text-center">
+            <h5 class="card-title">Orthopedics</h5>
+            <p class="card-text">Joint, bone, and muscle care from experienced surgeons.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/neurologist-consulting-senior-patient-about-brain-mri-scan_23-2149351916.jpg?w=400" class="card-img-top" alt="Neurology">
+          <div class="card-body text-center">
+            <h5 class="card-title">Neurology</h5>
+            <p class="card-text">Brain, nerve, and spinal care with trusted expertise.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 7 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/young-pregnant-woman-visiting-doctor-hospital_23-2149201777.jpg?w=400" class="card-img-top" alt="Maternity">
+          <div class="card-body text-center">
+            <h5 class="card-title">Maternity</h5>
+            <p class="card-text">Safe and caring support through pregnancy and birth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 8 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/nurse-preparing-blood-test-clinic_23-2148712232.jpg?w=400" class="card-img-top" alt="Laboratory">
+          <div class="card-body text-center">
+            <h5 class="card-title">Laboratory Services</h5>
+            <p class="card-text">Reliable and fast medical testing and diagnostics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 9 -->
+      <div class="col-md-4">
+        <div class="card service-card h-100 shadow-sm">
+          <img src="https://img.freepik.com/free-photo/medicine-tablets-pharmacy-counter_23-2148887303.jpg?w=400" class="card-img-top" alt="Pharmacy">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pharmacy</h5>
+            <p class="card-text">On-site prescriptions and expert pharmaceutical care.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ <div class="call-service-section">
+        <i class="fa fa-phone"></i>
+        <h4>We’re Here for You, Anytime</h4>
+        <h1>24 HOURS CALL SERVICE</h1>
+    </div>
+     <!--------footer--------->
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Providing top-notch healthcare with compassion and expertise, ensuring every patient receives the best treatment possible.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Appointments</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fa fa-phone"></i> +123 456 7890</p>
+                <p><i class="fa fa-envelope"></i> support@hospital.com</p>
+                <p><i class="fa fa-map-marker"></i> 123 Wellness Ave, City</p>
+            </div>
+             <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+    <a href="#"><img src="images/images (1).png" alt="Facebook"></a>
+    <a href="#"><img src="images/images (2).png" alt="Twitter"></a>
+    <a href="#"><img src="images/images (3).jpeg" alt="Instagram"></a>
+    <a href="#"><img src="images/images (7).jpeg" alt="LinkedIn"></a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hospital Name | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

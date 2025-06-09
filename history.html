@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health.gov.ng</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <!-------Navigation bar------>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Wave3.png" alt="Logo" width="40"> MyBrand
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-cogs"></i> Services
+                        </a>
+                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html"><i class="fas fa-cogs"></i> Our services</a></li>
+                            <li><a class="dropdown-item" href="history.html"><i class="fas fa-history"></i> Our history</a></li>
+                            <li><a class="dropdown-item" href="mang.html"><i class="fas fa-users"></i> Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="search-box d-flex">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons d-flex">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-------Header section---------->
+    <div class="header-section">
+        <div class="logo">
+            <img src="images/stethoscope 1.avif" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <div>
+                <i class="fa fa-phone"></i> +123 456 7890
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i> contact@example.com
+            </div>
+            <div>
+                <i class="fa fa-clock"></i> Mon-Fri: 9AM - 6PM
+            </div>
+        </div>
+    </div>
+    <!----------search Bar---------->
+      <div class="search-section">
+        <div class="search-container">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" class="search-box" placeholder="Search FAQ..." onkeyup="showSuggestions()">
+            <div class="suggestions" id="suggestions">
+                <div>Suggestion 1</div>
+                <div>Suggestion 2</div>
+                <div>Suggestion 3</div>
+            </div>
+        </div>
+    </div>
+    <!---Intro section------->
+    <section class="about-hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <h2 class="mb-3">Our History</h2>
+        <nav class="breadcrumb-nav d-flex align-items-center">
+          <i class="fa fa-home fa-lg text-white me-2"></i>
+          <span class="breadcrumb-text"><a href="index.html">Home</a></span>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Hospital History Timeline Section -->
+<section class="hospital-history-timeline py-5" style="background: linear-gradient(to right, #383b3d, #2c2f31);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h5 class="text-muted text-uppercase">Our Legacy</h5>
+      <h1 class="fw-bold">A Journey of Healing & Hope</h1>
+      <p class="lead text-secondary">From humble beginnings to a world-class facility — here's how it all started <strong>X years ago</strong>.</p>
+    </div>
+
+    <div class="timeline position-relative">
+      <!-- Item 1 -->
+      <div class="timeline-item left">
+        <div class="timeline-icon bg-primary text-white">
+          <i class="fa fa-hospital-o"></i>
+        </div>
+        <div class="timeline-content bg-custom">
+          <h4 class="fw-bold">Founded in 19XX</h4>
+          <p class="text">Our journey began with a mission to deliver quality care to our local community.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item right">
+        <div class="timeline-icon bg-success text-custom">
+          <i class="fa fa-user-md"></i>
+        </div>
+        <div class="timeline-content bg-custom">
+          <h4 class="fw-bold">First Medical Team</h4>
+          <p class="text">A passionate team of dedicated doctors joined to serve patients with compassion.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item left">
+        <div class="timeline-icon bg-warning text-custom">
+          <i class="fa fa-cogs"></i>
+        </div>
+        <div class="timeline-content bg-custom">
+          <h4 class="fw-bold">Technology Upgrade</h4>
+          <p class="text">Modern tools and equipment enabled us to offer cutting-edge medical services.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item right">
+        <div class="timeline-icon bg-danger text-custom">
+          <i class="fa fa-trophy"></i>
+        </div>
+        <div class="timeline-content bg-custom">
+          <h4 class="fw-bold">Global Recognition</h4>
+          <p class="text">International awards and certifications established our name in healthcare excellence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us py-5" style="background: linear-gradient(to right, #383b3d, #2c2f31);">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="img-wrap overflow-hidden rounded-4 shadow-sm">
+          <img src="images/work image.PNG" alt="Why Choose Us" class="img-fluid hover-zoom">
+        </div>
+      </div>
+
+      <!-- Right: Text Content -->
+      <div class="col-lg-6">
+        <h5 class="text-uppercase text- fw-semibold mb-2" style="color: gold;">Why Choose Us</h5>
+        <h2 class="fw-bold display-6 mb-3">Excellence in Care. Trusted by Thousands.</h2>
+        <p class="text-muted mb-4 fs-6">
+          At our hospital, every life matters. We blend advanced medicine, experienced professionals, and heartfelt care to create a healing environment.
+        </p>
+
+        <!-- Feature List -->
+        <div class="row gy-3">
+          <div class="col-sm-6">
+            <p class="mb-2">
+              <i class="fa fa-user-md text-success me-2"></i>
+              Skilled & Certified Doctors
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-heartbeat text-danger me-2"></i>
+              Emergency Response 24/7
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-2">
+              <i class="fa fa-stethoscope text-info me-2"></i>
+              Modern Diagnosis Tools
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-shield text-warning me-2"></i>
+              Patient Safety Guaranteed
+            </p>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <a href="#" class="btn btn-warning text-custom fw-semibold mt-4 shadow-sm">
+          Learn More <i class="fa fa-arrow-circle-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+ <!--------footer--------->
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Providing top-notch healthcare with compassion and expertise, ensuring every patient receives the best treatment possible.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Appointments</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fa fa-phone"></i> +123 456 7890</p>
+                <p><i class="fa fa-envelope"></i> support@hospital.com</p>
+                <p><i class="fa fa-map-marker"></i> 123 Wellness Ave, City</p>
+            </div>
+             <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+    <a href="#"><img src="images/images (1).png" alt="Facebook"></a>
+    <a href="#"><img src="images/images (2).png" alt="Twitter"></a>
+    <a href="#"><img src="images/images (3).jpeg" alt="Instagram"></a>
+    <a href="#"><img src="images/images (7).jpeg" alt="LinkedIn"></a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hospital Name | All Rights Reserved</p>
+        </div>
+    </footer>
+     <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

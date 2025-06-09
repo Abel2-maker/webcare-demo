@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health.gov.ng</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Wave3.png" alt="Logo" width="40"> MyBrand
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-cogs"></i> Services
+                        </a>
+                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html"><i class="fas fa-cogs"></i> Our services</a></li>
+                            <li><a class="dropdown-item" href="history.html"><i class="fas fa-history"></i> Our history</a></li>
+                            <li><a class="dropdown-item" href="mang.html"><i class="fas fa-users"></i> Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="search-box d-flex">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons d-flex">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="header-section">
+        <div class="logo">
+            <img src="images/stethoscope 1.avif" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <div>
+                <i class="fa fa-phone"></i> +123 456 7890
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i> contact@example.com
+            </div>
+            <div>
+                <i class="fa fa-clock"></i> Mon-Fri: 9AM - 6PM
+            </div>
+        </div>
+    </div>
+    <!----------search Bar---------->
+      <div class="search-section">
+        <div class="search-container">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" class="search-box" placeholder="Search FAQ..." onkeyup="showSuggestions()">
+            <div class="suggestions" id="suggestions">
+                <div>Suggestion 1</div>
+                <div>Suggestion 2</div>
+                <div>Suggestion 3</div>
+            </div>
+        </div>
+    </div>
+    <!----carousel--->
+     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/Bold\ doctor.jpg');">
+                <div class="carousel-caption">
+                    <h6>THE PERFECT HEALTH SOLUTION</h6>
+                    <p>Your dream care starts here.</p>
+                    <button class="btn btn-custom">Book Now</button>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/Bold\ doctor.jpg');">
+                <div class="carousel-caption">
+                    <h6>THE PERFECT HEALTH SOLUTION</h6>
+                    <p>Your dream care starts here.</p>
+                    <button class="btn btn-custom">Book Now</button>
+                </div>
+            </div>
+             <div class="carousel-item" style="background-image: url('images/Bold\ doctor.jpg');">
+                <div class="carousel-caption">
+                   <h6>THE PERFECT HEALTH SOLUTION</h6>
+                    <p>Your dream care starts here.</p>
+                    <button class="btn btn-custom">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-----Consultaion form----->
+    <div class="consultation-container">
+        <div class="form-description">
+            <p>Fill out this form to request a consultation. Our specialists will review your details and get in touch with you.</p>
+        </div>
+
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="symptoms">Symptoms:</label>
+                        <textarea id="symptoms" class="form-control" rows="3" placeholder="Describe your symptoms"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" class="form-control">
+                            <option value="" disabled selected">Select your gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Your Request</button>
+        </form>
+    </div>
+    <!----HISTORY SECTION---->
+     <div class="history-section">
+        <div class="history-content">
+            <div class="image-container">
+                <img src="images/Wave3.png" alt="Large Image" class="large-img">
+                <img src="images/work image.PNG" alt="Small Image" class="small-img">
+            </div>
+            <div class="history-text">
+                <h3 style="color: gold;">HISTORY:</h3>
+                <h1>PROFESSIONAL MEDICAL HISTORY</h1>
+                <p>jhdghjfbjhrbrohfjfkgjlrhuihuhghj
+                    fherjhrhtirhihtiruhououruqqhajgjknjkt
+        
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-----Emergency call----->
+
+     <div class="call-service-section">
+        <i class="fa fa-phone"></i>
+        <h4>We’re Here for You, Anytime</h4>
+        <h1>24 HOURS CALL SERVICE</h1>
+    </div>
+    <!----------Pediatric section--------->
+     <div class="pediatric-section">
+        <div class="pediatric-content">
+            <div class="info-card">
+                <h3>Care of Kids</h3>
+                <h1>Pediatric Care</h1>
+                <p>Providing expert medical care for children, ensuring their well-being and growth with specialized treatment and compassionate support.</p>
+            </div>
+        </div>
+    </div>
+    <!-----------Testimonials------->
+     <div class="testimonial-section">
+        <h1>Patient Testimonials</h1>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card">
+                        <p>"This hospital exceeded my expectations. The doctors were **exceptional**, and the care I received was beyond professional."</p>
+                        <h3>- Emily R.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <p>"I can't say enough about the amazing **staff** here. From the nurses to the specialists, every interaction was caring and supportive."</p>
+                        <h3>- John D.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <p>"The service was **top-tier**, the atmosphere comforting, and the treatments highly effective. I recommend this hospital to everyone!"</p>
+                        <h3>- Sarah M.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------footer--------->
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Providing top-notch healthcare with compassion and expertise, ensuring every patient receives the best treatment possible.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Appointments</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fa fa-phone"></i> +123 456 7890</p>
+                <p><i class="fa fa-envelope"></i> support@hospital.com</p>
+                <p><i class="fa fa-map-marker"></i> 123 Wellness Ave, City</p>
+            </div>
+             <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+    <a href="#"><img src="images/images (1).png" alt="Facebook"></a>
+    <a href="#"><img src="images/images (2).png" alt="Twitter"></a>
+    <a href="#"><img src="images/images (3).jpeg" alt="Instagram"></a>
+    <a href="#"><img src="images/images (7).jpeg" alt="LinkedIn"></a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hospital Name | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>         
